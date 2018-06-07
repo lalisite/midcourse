@@ -7,7 +7,7 @@ body {
     direction: rtl;
     font-family: 'Arial (Hebrew)', Arial;
     padding-bottom: 38px;
-    background: #fff url(/web/20170614052512im_/http://www.paz.co.il/images/header_bg.png) repeat-x center top;
+    background: #fff url('/images/header_bg.png') repeat-x center top;
     line-height: 1;
 }
 
@@ -19,6 +19,7 @@ body {
 }
 .floatcontainer, .fc {
     display: block;
+    color:white;
 }
 #header a.logo {
     display: block;
@@ -27,14 +28,18 @@ body {
     position: absolute;
     bottom: -20px;
     right: -8px;
-    background: url(/web/20170614052512im_/http://www.paz.co.il/images/paz_logo.png) no-repeat 0 0;
+    background: url('/images/paz_logo.png') no-repeat 0 0;
 }
 
 a {
     text-decoration: none;
     outline: none;
 }
-
+#header #mainMenu li a.home {
+    width: 17px;
+    /* border:1px solid red; */
+    /* background: url('/images/menu_home.png') no-repeat 0 top; */
+}
 
 user agent stylesheet
 a:-webkit-any-link {
@@ -88,7 +93,7 @@ a span {
     position: fixed;
     z-index: 999999;
     bottom: 0px;
-    background: url("images/footer_bg.png") repeat-x 0 0;
+    background: url("/images/footer_bg.png") repeat-x 0 0;
 }
 #fixedFooter .container {
     width: 900px;
@@ -99,4 +104,15 @@ a span {
     font-size: 14px;
     margin-top: 16px;
 }
+#fixedFooter  a.fbLink {
+    /* display: block; */
+    position: relative;
+    bottom: 2px;
+    width: 18px;
+    height: 18px;
+    /* background: url('') no-repeat 0 0; */
+}
 
+#fixedFooter  a{
+    color:white;
+}
