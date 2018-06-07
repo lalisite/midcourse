@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+  margin: 0;
+}
+/* header */
+
+/* section container */
+
+/* footer */
+#fixedFooter {
+    width: 100%;
+    height: 38px;
+    position: fixed;
+    z-index: 999999;
+    bottom: 0px;
+    background: url("images/footer_bg.png") repeat-x 0 0;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Arial (Hebrew)', Arial;
+    padding-bottom: 38px;
+    background: #fff url(/web/20170614052512im_/http://www.paz.co.il/images/header_bg.png) repeat-x center top;
+}
+body {
+    line-height: 1;
+}
