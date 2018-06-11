@@ -70,6 +70,7 @@ sideMenu {
     font-weight: bold;
     line-height: 1.2;
     margin: 5px 0;
+    text-align: right;
 }
 label {
     cursor: default;
@@ -217,4 +218,12 @@ a.button {
     color: #5c5c5c;
     line-height: 32px;
     background: url("images/side_menu_sprite.png") no-repeat 0 0;
+}
+
+a.button span.text {
+    font-size: 14px;
+    color: #fff;
+    background: url("images/button_blue.png") repeat-x 0 0;
+    line-height: 21px;
+    padding: 0 4px;
 }
