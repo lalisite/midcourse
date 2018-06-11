@@ -131,22 +131,32 @@ a.readMore2:hover  {
         #909090 ,
         #909090 80%); 
     right: 10px;
-    top: 25px;
+    top: 16px;
     display: none;
     z-index: 5;
     text-align: right;
     padding: 4px;    
   }
+
+  
   .dropdown-content > a {
       
-      text-decoration: none;     
+      text-decoration: none; 
+      padding: 2px;    
   }
-  .dropdown-content > li{
-    border-bottom: 0.4px solid rgb(185, 185, 185);
+  
+.dropdown:hover>a , .dropdown-content a:hover {
+    color: rgb(0,92,160);
+}
+.dropdown-content>li{
     margin: 0;
-    padding: 0;
+    padding: 5px ;
     display: block;
     border-width: 100%;
+  }
+
+.dropdown-content>li:not(.different) {
+    border-top: 0.4px solid rgb(185, 185, 185);
   }
   .dropdown:hover > .dropdown-content {
     display: block;
@@ -315,6 +325,7 @@ div.link2{
     vertical-align:middle;
     font-size: 14px;
     color:white;
+    bottom:-3px;
 }
 
 /* ========================================================================================= */
