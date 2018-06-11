@@ -1,11 +1,11 @@
 /* contact */
-#divMain{
-    border:greenyellow solid;
+/* #container{
+    
     margin:auto;
     width:900px;
     height:426px;
-}
-#divMain::after {
+} */
+.header::after,.rowC::after {
         content: "";
         clear: both;
         display: table;
@@ -14,13 +14,15 @@
 .layout1 {
     padding-top: 32px;
 }
-.fc {
+.fcc {
     display: block;
 }
 #sideMenu {
-    float: right;
-    width: 122px;
-    margin-left: 22px;
+  margin-left: 22px;
+    
+}
+#formContact{
+    margin-left: 24px;
 }
 .layout1 .content {
     float: right;
@@ -61,7 +63,9 @@
     color: #005ca0;
     font-weight: bold;
     font-size: 15px;
-    display: block;
+    display: inline-block;
+    margin: 0px;
+    height:15px;
 }
 #contactFormWrapper .caption {
     display: block;
@@ -132,7 +136,9 @@ option {
 }
 
 #contactFormWrapper .fields div.line {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    height:22px;
+    width:245px;
 }
 
 #contactFormWrapper .fields label {
@@ -140,6 +146,7 @@ option {
     display: inline-block;
     width: 80px;
     text-align: right;
+    font-size: 12px;
 }
 
 #contactFormWrapper .fields input[type="text"] {
@@ -178,6 +185,17 @@ a.button {
     height: 142px;
     padding: 18px 22px 15px;
     background: url("images/cube_bg.png") no-repeat 0 0;
+    box-sizing: content-box;
+}
+.cubebase{
+    line-height: 1;
+    text-align: right;
+}
+.h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #005ca0;
+    margin-bottom: 10px;
 }
 .cube .content {
     font-size: 13px;
@@ -188,9 +206,19 @@ a.button {
     height: 20px;
 }
 
-
-
-#sideMenu ul {
+#sMenu{
+    width:122px;
+    height:36px;
+    color: #5c5c5c;
+    border-top: 1px solid #dedede;
+    background: url("images/side_menu_sprite.png") no-repeat 0 0;
+    background-position: -122px 0;
+    
+}
+.col{
+    float:right ;
+}
+/* #sideMenu ul {
     margin-right: 0;
     padding-right: 130px;
     list-style: none;
@@ -213,7 +241,7 @@ a.button {
     color: #5c5c5c;
     line-height: 32px;
     background: url("images/side_menu_sprite.png") no-repeat 0 0;
-}
+} */
 
 a.button span.text {
     font-size: 14px;
@@ -228,6 +256,10 @@ a.button span.text {
     top: 0px;
     right: 0px;
 }
+.form{
+    height:347px;
+    width: 293px;
+}
 
 /* h1.title{
     color: #72716d;
@@ -239,32 +271,69 @@ a.button span.text {
     width:440px;
     height:15px;
 } */
-
+.content p a{
+text-decoration: none;
+}
+.content p a:hover{
+    text-decoration: underline;
+    }
 h1.title1{
     font-size: 15px;
     border-bottom: 1px solid #cbcbcb;
     color: #72716d;
     text-align: right;
     width:440px;
+    height:15px;
+    top:20px;
+    box-sizing: content-box;
+
 }
 
 .instructions
 {
     color: #6d6d6d;
+    font-size: 12px;
 }
-rowC , .form ,.title,#breadcrumbs{
+.rowC , .form ,.title1,#breadcrumbs{
     direction: rtl;
     text-align: right;
+    box-sizing:unset; 
 }
 
 .rowC{
     width:900px;
     height:458px;
+    line-height: unset;
+    
 }
-#sideMenu ul li a:hover, #sideMenu ul li a.selected {
+#sMenu>a:hover {
     background-position: -122px 0;
 }
-
+#contactFormWrapper .fields input[type="text"] {
+    width: 160px;
+    padding: 3px;
+    border: 1px solid #808992;
+}
+.floatcontainer:after, .fcc:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#contactFormWrapper .fields textarea {
+    float: right;
+    color: #6d6d6d;
+    width: 235px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992;
+    /* margin-top: 10px; */
+    padding-top:0px;
+    margin-right: 4px;
+    margin-bottom:0px;
+}
+#ctl00_Send {text-decoration:none;}
 /* .col{
     float:right;
     background-color: lightgrey;
