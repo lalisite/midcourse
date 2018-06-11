@@ -17,7 +17,7 @@
 .fc {
     display: block;
 }
-sideMenu {
+#sideMenu {
     float: right;
     width: 122px;
     margin-left: 22px;
@@ -199,11 +199,9 @@ a.button {
 #sideMenu ul li {
     display: block;
     width: 122px;
-    min-height: 36px;
+    height: 36px;
 }
-#sideMenu ul li a:hover, #sideMenu ul li a.selected {
-    background-position: -122px 0;
-}
+
 #sideMenu ul li a {
     display: block;
     width: 110px;
@@ -254,7 +252,34 @@ h1.title1{
 {
     color: #6d6d6d;
 }
-#rowC , .form ,.title,#breadcrumbs{
+rowC , .form ,.title,#breadcrumbs{
     direction: rtl;
     text-align: right;
 }
+
+.rowC{
+    width:900px;
+    height:458px;
+}
+#sideMenu ul li a:hover, #sideMenu ul li a.selected {
+    background-position: -122px 0;
+}
+
+/* .col{
+    float:right;
+    background-color: lightgrey;
+    border:green solid;
+}
+.col-10{
+    width: ;
+    
+}
+
+.col-50{
+    width: 50%;
+    
+}
+.col-40{
+    width: 40%;
+    
+} */

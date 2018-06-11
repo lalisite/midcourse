@@ -329,26 +329,4 @@ div.link2{
 }
 
 /* ========================================================================================= */
-.rowC{
-    width:900px;
 
-}
-.col{
-    float:right;
-    /* height:440px; */
-    background-color: lightgrey;
-    border:green solid;
-}
-.col-10{
-    width: 10%;
-    
-}
-
-.col-50{
-    width: 50%;
-    
-}
-.col-40{
-    width: 40%;
-    
-}
