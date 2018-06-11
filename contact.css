@@ -1,0 +1,220 @@
+/* contact */
+#divMain{
+    border:greenyellow solid;
+    margin:auto;
+    width:900px;
+    height:426px;
+}
+#divMain::after {
+        content: "";
+        clear: both;
+        display: table;
+}
+
+.layout1 {
+    padding-top: 32px;
+}
+.fc {
+    display: block;
+}
+sideMenu {
+    float: right;
+    width: 122px;
+    margin-left: 22px;
+}
+.layout1 .content {
+    float: right;
+    margin-left: 24px;
+    color: #72716d;
+    font-size: 12px;
+    width: 440px;
+}
+#breadcrumbs {
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-bottom: 25px;
+}
+#breadcrumbs a {
+    color: #5c5c5c;
+}
+#contactFormWrapper {
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 49%, #f7f7f7 51%, #ececec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#f7f7f7), color-stop(51%,#f7f7f7), color-stop(100%,#ececec));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
+    background: linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 );
+    background-image: url(/web/20170614052512im_/http://www.paz.co.il/images/contact_form_bg.png) no-repeat 0 0;
+    border-top-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+}
+#contactFormWrapper h2 {
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+#contactFormWrapper .caption {
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+label {
+    cursor: default;
+}
+input, textarea, select {
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+select {
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#contactFormWrapper .fields {
+    width: 245px;
+    margin: 10px auto 0;
+}
+
+#contactFormWrapper .fields div.line {
+    margin-bottom: 5px;
+}
+
+#contactFormWrapper .fields label {
+    color: #6d6d6d;
+    display: inline-block;
+    width: 75px;
+    text-align: right;
+}
+
+#contactFormWrapper .fields input[type="text"] {
+    width: 160px;
+    padding: 3px;
+    border: 1px solid #808992;
+    cursor: text;
+}
+
+#contactFormWrapper .fields a.button.nomargins {
+    top: 0;
+}
+#contactFormWrapper .fields a.button {
+    position: relative;
+    top: 22px;
+}
+a.button {
+    display: inline-block;
+    height: 21px;
+}
+.fLeft {
+    float: left;
+}
+
+/* =================================== */
+.layout1 .sideCubes {
+    float: right;
+    width: 292px;
+    margin-top: 36px;
+}
+.layout1 .sideCubes .cubeseparator {
+    height: 20px;
+}
+.cube {
+    width: 248px;
+    height: 142px;
+    padding: 18px 22px 15px;
+    background: url("images/cube_bg.png") no-repeat 0 0;
+}
+.cube .content {
+    font-size: 13px;
+    color: #6d6d6d;
+    width: 248px;
+}
+.layout1 .sideCubes .cubeseparator {
+    height: 20px;
+}
+
+.title{
+
+    border-bottom:1px #d6d6d6 solid ;
+}
+
+#sideMenu ul {
+    margin-right: 0;
+    padding-right: 130px;
+    list-style: none;
+    border-top: 1px solid #dedede;
+}
+#sideMenu ul li {
+    display: block;
+    width: 122px;
+    min-height: 36px;
+}
+#sideMenu ul li a:hover, #sideMenu ul li a.selected {
+    background-position: -122px 0;
+}
+#sideMenu ul li a {
+    display: block;
+    width: 110px;
+    height: 36px;
+    overflow: hidden;
+    padding-right: 12px;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #5c5c5c;
+    line-height: 32px;
+    background: url("images/side_menu_sprite.png") no-repeat 0 0;
+}
