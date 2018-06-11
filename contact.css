@@ -52,7 +52,7 @@ sideMenu {
     background: -ms-linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
     background: linear-gradient(top, #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 );
-    background-image: url(/web/20170614052512im_/http://www.paz.co.il/images/contact_form_bg.png) no-repeat 0 0;
+    background-image: url("images/contact_form_bg.png") no-repeat 0 0;
     border-top-right-radius: 20px;
     -webkit-border-top-right-radius: 20px;
     -moz-border-radius-topright: 20px;
