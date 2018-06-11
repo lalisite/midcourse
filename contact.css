@@ -43,8 +43,8 @@
     border-style: solid solid none solid;
     border-width: 1px;
     border-color: #CCCCCC;
-    width: 347px;
-    min-height: 332px;
+    width: 395px;
+    height: 350px;
     padding: 12px 18px;
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 49%, #f7f7f7 51%, #ececec 100%);
@@ -170,7 +170,9 @@ a.button {
 .fLeft {
     float: left;
 }
-
+a.selected{
+    margin-right:-50px;
+}
 /* =================================== */
 .layout1 .sideCubes {
     float: right;
@@ -258,7 +260,7 @@ a.button span.text {
 }
 .form{
     height:347px;
-    width: 293px;
+    width: 335px;
 }
 
 /* h1.title{
@@ -309,6 +311,12 @@ h1.title1{
 #sMenu>a:hover {
     background-position: -122px 0;
 }
+#sMenu>a{
+    font-size: 13px;
+line-height: 36px;
+vertical-align: middle;
+
+}
 #contactFormWrapper .fields input[type="text"] {
     width: 160px;
     padding: 3px;
@@ -333,7 +341,11 @@ h1.title1{
     margin-right: 4px;
     margin-bottom:0px;
 }
-#ctl00_Send {text-decoration:none;}
+#ctl00_Send {
+    text-decoration:none;
+    margin-top: 8px;
+    margin-left: 2px;
+}
 /* .col{
     float:right;
     background-color: lightgrey;
