@@ -1,427 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Homepage (old site mime)</title>
+<style>
+   
+</style>
 </head>
+
 <body>
     <div id="container">
- <header>
-    <div id="header" class="fc">
-        <a class="logo" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/"></a>
-        
-    <div id="searchBox" class="fc">
-        <div class="input">
-            <input name="Top1$SearchBox1$SearchTextBox" type="text" value="רשום מילת חיפוש" id="Top1_SearchBox1_SearchTextBox" onfocus="this.value = ''" onblur="resetSearch()">
-        </div>
-        <a href="#">&nbsp;&nbsp;</a>
-    </div>
-    
-    <script type="text/javascript">
-    function resetSearch() {
-        var placeHolder = 'רשום מילת חיפוש';
-        var val = $("#Top1_SearchBox1_SearchTextBox").val();
-        if (!val || val.length == 0)
-            $("#Top1_SearchBox1_SearchTextBox").val(placeHolder);
-    }
-    
-    $("#Top1_SearchBox1_SearchTextBox").live('keyup', function (e) {
-        if (e.keyCode == '13') {
-            e.stopPropagation();
-            searchSite();
-            return false; 
-        }
-    });
-    
-    $('#searchBox a').live('click', function (e) {
-        e.preventDefault();
-        searchSite();
-        return false;
-    });
-    
-    function searchSite(){
-        var query = $("#Top1_SearchBox1_SearchTextBox").val();
-        if (query && query.length > 0) {
-            query = escape(query);
-            location.href = 'http://' + 'www.paz.co.il' + '/index.aspx?id=4158&searchKey=' + query;
-        }
-    }
-    </script>
-        <nav>
-            <ul id="mainMenu" class="fc">
-                <li >
-                    <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/" class="home selectednode"><img src='/images/menu_home.png' alt="home"class="home"></a>
+        <header>
+            <div class="header">
+                <p >
+                    <a href="#" id="enlang">English</a>
                 
+                    <input type="text" name="search" id="search" placeholder="רשום מילת חיפוש">
                 
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4152">
-                    <span>אודות</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4293">
-                                <span>אודות</span>
+                    <img src="images/search_button.png" height="19px" alt="search">
+                </p>
+                <div class="menu">
+                    <div id="logo">
+                        <img src="images/paz_logo.png" alt="logo">
+                    </div>
+                    <ul >
+                        <li  class="sep">
+                            <a href="#" id="home">
+                                <img src="images/menu_home.png" >
                             </a>
+                           
+                            
+                        </li>
                         
-                    
+                        <li class="dropdown sep">
+                            
+                            <a href="#" >אודות</a>
+                            <ul class="dropdown-content">
+                                
+                                <li><a href="#">אודות</a></li>
+                                
+                                <li><a href="#">היסטוריה</a></li>
+                                
+                                <li><a href="#">חזון&nbsp;וערכים</a></li>
+                                
+                                <li><a href="#">מבנה&nbsp;הקבוצה</a></li>
+                                
+                                <li><a href="#">חברי&nbsp;דירקטוריון</a></li>
+                               
+                                <li><a href="#">הנהלת&nbsp;הקבוצה</a></li>
+                                
+                                <li><a href="#">פרסום&nbsp;והוקרה</a></li>
+                                
+                            </ul>
+                            
+                        </li>
                         
-                    
+                        <li class="dropdown sep">
+                           
+                            <a href="#">חטיבות</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">חטיבות</a></li>
+                                    
+                                    <li><a href="#">קמעונאות&nbsp;ומסחר</a></li>
+                                    
+                                    <li><a href="#">תעשיות&nbsp;ושירותים</a></li>
+                                    
+                                    <li><a href="#">זיקוק</a></li>
+                            </ul>   
+                        </li>
                         
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4155">
-                                <span>היסטוריה</span>
-                            </a>
+                        <li class="dropdown sep">
+                            
+                            <a href="#">אחריות תאגידית</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">אחריות&nbsp;תאגידית</a></li>
+                                   
+                                    <li><a href="#">הקוד&nbsp;האתי</a></li>
+                                   
+                                    <li><a href="#">מעורבות&nbsp;חברתית</a></li>
+                                   
+                                    <li><a href="#">נגישות</a></li>     
+                                   
+                                    <li><a href="#">איכות&nbsp;הסביבה&nbsp;ובטיחות</a></li>
+                                   
+                                    <li><a href="#">דירוג&nbsp;מעלה</a></li>    
+                            </ul>  
+                        </li>
                         
-                    
+                        <li class="dropdown sep">
+                            
+                            <a href="#">קשרי משקיעים</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">פרופיל&nbsp;חברה</a></li>
+                                   
+                                    <li><a href="#">דו"חות&nbsp;כספיים</a></li>
+                                   
+                                    <li><a href="#">כלים&nbsp;למשקיע</a></li>
+                                   
+                                    <li><a href="#">נתוני&nbsp;מניה</a></li>     
+                                   
+                                    <li><a href="#">אסיפות&nbsp;כלליות</a></li>   
+                            </ul>  
+                        </li>
                         
-                    
+                        <li class="dropdown sep">
+                            
+                            <a href="#">התחנות שלנו</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">התחנות&nbsp;שלנו</a></li>
+                                   
+                                    <li><a href="#">נגישות&nbsp;מתחמי&nbsp;פז</a></li>
+                                   
+                                    <li><a href="#">רשימת&nbsp;תחנות</a></li>
+                                   
+                                    <li><a href="#">מועדונים</a></li>             
+                            </ul>  
+                        </li>
                         
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4294">
-                                <span>חזון וערכים</span>
-                            </a>
+                        <li class="dropdown sep">
+                            
+                            <a href="#">קריירה</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">לעבוד&nbsp;בפז</a></li>
+                                   
+                                    <li><a href="#">ניהול&nbsp;תחנת&nbsp;פז</a></li>
+                                   
+                                    <li><a href="#">קריירה</a></li>    
+                            </ul>  
+                        </li>
                         
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4316">
-                                <span>מבנה הקבוצה</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4328">
-                                <span>חברי דירקטוריון</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4321">
-                                <span>הנהלת הקבוצה</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4320">
-                                <span>פרסים והוקרה</span>
-                            </a>
-                        
+                        <li class="dropdown ">
+                            
+                            <a href="#">חדשות ומדיה</a>
+                            <ul class="dropdown-content">
+                                    <li><a href="#">פרסומות</a></li>
+                                   
+                                    <li><a href="#">הודעות&nbsp;לעיתונות</a></li>  
+                            </ul>  
+                        </li>
                     </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4255">
-                    <span>חטיבות</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4256">
-                                <span>חטיבות</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4310">
-                                <span>קמעונאות ומסחר </span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4314">
-                                <span>תעשיות ושירותים</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4315">
-                                <span>זיקוק </span>
-                            </a>
-                        
-                    </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4286">
-                    <span>אחריות תאגידית</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4287">
-                                <span>אחריות תאגידית</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4383">
-                                <span>הקוד האתי</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4289">
-                                <span>מעורבות חברתית</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4381">
-                                <span>נגישות</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4382">
-                                <span>איכות הסביבה ובטיחות</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4517">
-                                <span>דירוג מעלה</span>
-                            </a>
-                        
-                    </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4269">
-                    <span>קשרי משקיעים</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4270">
-                                <span>פרופיל חברה</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4271">
-                                <span>דו"חות כספיים</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4272">
-                                <span>כלים למשקיע</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4273">
-                                <span>נתוני מניה</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4564">
-                                <span>אסיפות כלליות</span>
-                            </a>
-                        
-                    </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4275">
-                    <span>התחנות שלנו</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4340">
-                                <span>התחנות שלנו</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4277">
-                                <span>נגישות מתחמי פז</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4388">
-                                <span>רשימת תחנות</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4373">
-                                <span>מועדונים</span>
-                            </a>
-                        
-                    </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4245">
-                    <span>קריירה</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4281">
-                                <span>לעבוד בפז</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4282">
-                                <span>ניהול תחנת פז</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4168">
-                                <span>קריירה</span>
-                            </a>
-                        
-                    </ul>
-            
-        
-            
-        
-            
-                <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4283">
-                    <span>חדשות ומדיה</span>
-                </a>
-                <ul>
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4284">
-                                <span>פרסומות</span>
-                            </a>
-                        
-                    
-                        
-                    
-                        
-                            <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4285">
-                                <span>הודעות לעיתונות</span>
-                            </a>
-                        
-                    </ul>
-            
-            </ul> 
-        </nav> 
-    <div id="langmenu">
-    <ul>
+                </div>
+            </div>
     
-        <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4424">English
-        </a>
+        </header>
+        <style type="text/css">
+            #hp .cube h3 {
+                right: 4px;
+            }
+        </style>
+
+        <section>
+            
+                <div class="row">
+                    <div class="img">
+                        <img src="images/retailtrade.jpg" alt="קמעונאות ומסחר" class="top">
+                        <div class="divtxt">
+                            <h3>קמעונאות ומסחר</h3>
+                            <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות,
+                                יעילות ומובילות. החטיבה פועלת...</p>
+                            <div class="link">
+                                <a href="#" class="readMore">קרא עוד
+                                    <img src="images/read_more_white.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/zikuk.jpg" alt="זיקוק" class="top">
+                        <div class="divtxt">
+                            <h3>זיקוק</h3>
+                            <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת
+                                ייצור תזקיקי נפט...</p>
+                            <div class="link">
+                                <a href="#" class="readMore">קרא עוד
+                                    <img src="images/read_more_white.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/induserv.jpg" alt="תעשיות ושרותים" class="top">
+                        <div class="divtxt">
+                            <h3>תעשיות ושירותים</h3>
+                            <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של
+                                נפט, ומובילות את השוק...</p>
+                            <div class="link">
+                                <a href="#" class="readMore">קרא עוד
+                                    <img src="images/read_more_white.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img">
+                        <img src="images/cube_bg.png" width="292" height="216" alt="קמעונאות ומסחר" class="bottom">
+                        <div>
+                            <h2>כרטיס אשראי שופרסל וכרטיס אשראי יש</h2>
+                        </div>
+                        <div class="adv_img">
+                            <img src="images/paz8.jpg">
+                        </div>
+                        <div class="link2">
+                            <a href="#"  class="readMore2">לפרטים נוספים
+                                <img src="images/read_more_yellow.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/cube_bg.png" width="292" height="216" alt="זיקוק" class="bottom">
+                        <div>
+                            <h2>yellow click&pick;</h2>
+                        </div>
+                        <div class="adv_img">
+                            <img src="images/banner_atar.jpg">
+                        </div>
+                        <div class="link2" >
+                            <a href="#" class="readMore2">לפרטים נוספים
+                                <img src="images/read_more_yellow.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/cube_bg.png"  alt="תעשיות ושרותים" class="bottom">
+                        <div>
+                            <h2>התחנות שלנו בדרך שלך</h2>
+                             <!-- <img  class="map" src="images/ilmap.jpg" width="73px" height="168px"> -->
+                        </div>
+                        <div class="adv_img">
+                                  
+                            <p>
+                                <a href="#" class="readMoreMap">צפון  </a>
+                                <img src="images/read_more_yellow.png">
+                            </p>
+                            <p>
+                                
+                                <a href="#" class="readMoreMap">מרכז</a>
+                                <img src="images/read_more_yellow.png">
+                            </p>
+                            <p>
+                                <a href="#" class="readMoreMap">דרום</a>
+                                <img src="images/read_more_yellow.png">
+                                
+                            </p>
+                           
+                        
+                        </div>
+                        <div id="map">
+                                <img src="images/ilmap.jpg" width="73px" height="168px">
+                            </div>
+                        
         
+                    </div>
+                </div>
+           
+        </section>
+    </div>
     
-    </ul>
-    </div>
-    </div>
- </header>
- <style type="text/css">
-    #hp .cube h3 {right: 4px;}
-</style>
-<hr/>   
-    <section>
-gfghfhgfhgfhgfghfhfghfhgfhgfg
-    </section>
-</div>  
-    ===========================
     <footer id="fixedFooter">
-            
-        <div class="container">
-            <!--a id="mcan" href='http://www.mccann.co.il/' target='_blank'>site/paz/mcanText</a-->
+         <div class="container"> 
             <nav class="menu">
-            <span class="fc">
-                
-                    <a class="fbLink" href="https://web.archive.org/web/20170702073345/http://www.facebook.com/YellowPaz" target="_blank">
-                    <img src="/images/fb_icon.png" alt="facebook">
+                <div class="fc">
+                    <a  href="#" target="_blank" class="fbLink"> 
+                        <!-- <img src="images/fb_icon.png" alt="facebook" class="fbLink"/> -->
                     </a>
-                    <a title="קישור לעמוד הבית" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=2263">עמוד הבית</a>
-                
-            |
-                
-                    <a title="קישור למחירונים" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4386">מחירונים</a>
-                
-            |
-                
-                    <a title="קישור לקריירה" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4168">קריירה</a>
-                
-            |
-                
-                    <a title="קישור לתנאי שימוש" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4244">תנאי שימוש</a>
-                
-            |
-                
-                    <a title="קישור לנגישות" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4520">נגישות</a>
-                
-            |
-                
-                    <a title="קישור למפת אתר" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4523">מפת אתר</a>
-                
-            |
-                
-                    <a title="קישור לצור קשר" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4259">צור קשר</a>
-                
-            |
-                
-                    <a title="קישור לשטחי מסחר" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4456">שטחי מסחר</a>
-                
-            |
-                
-                    <a title="קישור להסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4600">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
-                
-            </span>
-        </nav>
+                    |
+                    
+                    <a title="קישור לעמוד הבית" href="#">עמוד הבית</a>
+
+                    |
+
+                    <a title="קישור למחירונים" href="#">מחירונים</a>
+
+                    |
+
+                    <a title="קישור לקריירה" href="#">קריירה</a>
+
+                    |
+
+                    <a title="קישור לתנאי שימוש" href="#">תנאי שימוש</a>
+
+                    |
+
+                    <a title="קישור לנגישות" href="#">נגישות</a>
+
+                    |
+
+                    <a title="קישור למפת אתר" href="#">מפת אתר</a>
+
+                    |
+
+                    <a title="קישור לצור קשר" href="contact.html">צור קשר</a>
+
+                    |
+
+                    <a title="קישור לשטחי מסחר" href="#">שטחי מסחר</a>
+
+                    |
+
+                    <a style="color:red;" title="קישור להסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט" href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
+
+                <!-- </div> -->
+            </nav>
         </div>
 
     </footer>
 </body>
+
 </html>
