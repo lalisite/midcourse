@@ -138,7 +138,7 @@ option {
 #contactFormWrapper .fields label {
     color: #6d6d6d;
     display: inline-block;
-    width: 75px;
+    width: 80px;
     text-align: right;
 }
 
@@ -188,10 +188,7 @@ a.button {
     height: 20px;
 }
 
-.title{
 
-    border-bottom:1px #d6d6d6 solid ;
-}
 
 #sideMenu ul {
     margin-right: 0;
@@ -226,4 +223,38 @@ a.button span.text {
     background: url("images/button_blue.png") repeat-x 0 0;
     line-height: 21px;
     padding: 0 4px;
+}
+
+.form h2{
+    position:static;
+    top: 0px;
+    right: 0px;
+}
+
+/* h1.title{
+    color: #72716d;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    width:440px;
+    height:15px;
+} */
+
+h1.title1{
+    font-size: 15px;
+    border-bottom: 1px solid #cbcbcb;
+    color: #72716d;
+    text-align: right;
+    width:440px;
+}
+
+.instructions
+{
+    color: #6d6d6d;
+}
+#rowC , .form ,.title,#breadcrumbs{
+    direction: rtl;
+    text-align: right;
 }
